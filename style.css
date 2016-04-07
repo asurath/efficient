@@ -1,0 +1,361 @@
+/*
+Theme Name: Efficient
+Author: Arun Surath
+*/
+
+html {
+	background:#222;
+        height: 100%;
+        overflow:hidden; 
+        z-index:-1;
+        -webkit-text-size-adjust: 100%;
+}
+* {
+	font-family: "Arial Black", gadget, monospace;
+	padding:0;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+a {
+	text-decoration:none;
+	color:#000;
+}
+h1 {
+    z-index: -2;
+    display:none;
+}
+#header {
+	font-weight:bold;
+	overflow-x: hidden;
+}
+#header:hover {
+	color:#0071C5 !important;
+}
+#header img {
+	margin-left: 50%;
+	position:relative;
+	left:-98px;
+	border:10px solid #0081D6;
+	border-radius:110px;
+	margin-bottom:5px;
+
+}
+#header span:first-of-type {
+        background: transparent; 
+        width:100%;
+	text-align:center;
+	margin:0;
+	display: block;
+	font-size: 32px;
+	height:auto;
+}
+#header span:last-of-type {
+        background: transparent; 
+        width:100%;
+	text-align:center;
+	margin:0;
+	display: block;
+	margin-left: -3px;
+    	font-size: 27px;
+    	height: 38px;
+}
+h2{
+	display: block;
+	width: 86%;
+	text-align: center;
+	margin: 27px 5% 0px;
+	padding: 10px 2% 20px;
+	font-size: 20px;
+}
+p {
+        width:90%;
+        text-align:left;
+        overflow:hidden;
+        margin: 0px 5% 20px;
+        color:#444;
+        font-size:1em;
+        font-family: Helvetica;
+}
+p:last-of-type {
+        margin: 10px 5% 40px;
+}
+h3 {
+	width:100%;
+	text-align:center;
+	margin-left:-3px;
+	font-size:27px;
+}
+body {
+	overflow:hidden;
+	width:100%;
+	max-width:1280px;
+	height:100%;
+}
+#opaque-div {
+        position:fixed;
+        height:100%;
+        width:100%;
+        max-width:1280px;
+        top:0;
+        opacity:.6;
+        -moz-transition: left .3s ease-in-out;
+	-ms-transition: left .3 ease-in-out;
+	-webkit-transition: left .3 ease-in-out;
+	transition: left .3s ease-in-out;
+        left:0;
+        z-index:0;
+        background:#005EA4;
+}
+.menu-open-opaque {
+	left:310px !important;
+	z-index:1 !important;
+}
+#content img {
+	border-radius:5px;
+	max-width:100%;
+}
+.image-subtitle {
+	width:100%;
+	text-align:center;
+	display:block;
+	font-size:.9em;
+}
+#copyr {
+	color:#BBB;
+	position: relative;
+	bottom: 10px;
+	left: 5%;
+	font-size: .7em;
+}
+#main {
+	width:100%;
+	max-width: 1310px;
+	margin: 0 auto;
+	background: #FFF;
+	overflow:hidden;
+	position:relative;
+	height:100%;
+	display:block;
+	-moz-transition: left .3s ease-in-out;
+	-ms-transition: left .3 ease-in-out;
+	-webkit-transition: left .3 ease-in-out;
+	transition: left .3s ease-in-out;
+	left:0;
+}
+.menu-open {
+	left: 310px !important;
+}
+#menu {
+	width:310px;
+	position:fixed;
+        height:100%;
+	left:0;
+	z-index: 0;
+        top:0;
+	border: 0px solid #005EA4;
+	border-right-width:2px;
+	border-left-width:2px;
+	background: #FFF;
+	background:#0062A8;
+	box-sizing:border-box;
+	overflow:auto;
+}
+
+#content {
+	background:#FCFCFC;
+	position:fixed;
+	overflow:auto;
+        height:100%;
+	-moz-transition: left .3s ease-in-out;
+	-ms-transition: left .3 ease-in-out;
+	-webkit-transition: left .3 ease-in-out;
+	transition: left .3s ease-in-out;
+	border-right: solid 2px #005EA4;
+	box-sizing:border-box;
+	-webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        left:0;
+	right:0;
+	top:0;
+	width: calc(100% - 310px);	
+	max-width:970px;
+}
+hr {
+	width: 90%;
+	background: #005EA4;
+	margin: 35px 5% -5px;
+}
+hr:last-of-type {
+	display:none;
+}
+#content a {
+	color:#0081D6;
+	font-size:.8em;
+}
+#header {
+	padding: 15px 0;
+}
+#header:hover > span {
+        color:#F2F2F2;
+}
+#psuedo-menu-icon {
+	position:fixed;
+	z-index:3;
+	width:65px;
+	height:65px;
+	top:0;
+	left:0;
+}
+#menu-icon {
+	position:fixed;
+	display:none;	
+	z-index:2;
+	width:0;
+	height:0;
+	border-bottom: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-left: 30px solid #005EA4;
+	border-top: 30px solid #005EA4;
+	-moz-transition: left .3s ease-in-out;
+	-ms-transition: left .3 ease-in-out;
+	-webkit-transition: left .3 ease-in-out;
+	transition: left .3s ease-in-out;
+	top:0;
+	left:0;
+}
+.span-open {
+	height: 115px !important;
+}
+#menu-icon img {
+	position:relative;
+	width:25px;
+	height:25px;
+	top:-25px;
+	left:-25px;
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+#menu span {
+	display:block;
+	width:100%;
+	height:45px;
+	overflow:hidden;
+	text-align:center;
+	background:#0071C5;
+	cursor:pointer;
+	color:#FFF;
+	transition: height .3s ease-in-out;
+}
+#misc {
+	margin-bottom:10px;
+}
+#misc span {
+	padding:0 !important;
+	height:100% !important;
+}
+#misc span a{
+	padding: 13px 0 0 !important;
+	font-size: 15px !important;
+	height:100%;
+}
+#menu > span:hover {
+	color:#222;
+}
+#menu > span > span:hover {
+	color:#222;
+}
+#menu > a:nth-of-type(2){
+        display:block;
+	width:100%;
+	height:35px;
+	padding: 10px 0 0;
+        text-align:center;
+}
+#menu > a:nth-of-type(3){
+        display:block;
+	width:100%;
+	height:35px;
+	padding: 10px 0 0;
+        position:relative;
+        text-align:center;
+}
+#menu a:hover {
+	color:#222;
+}
+#menu a {
+	color:#FFF;
+}
+#menu >a:last-of-type{
+	display:block;
+	width:100%;
+	height:35px;
+	padding: 10px 0 0;
+        text-align:center;
+}
+#menu > a:last-of-type:hover {
+	color:#222 !important;
+}
+#menu span span {
+	display:block;
+	height:35px;
+	width:100%;
+	background:#0081D6;
+	padding: 15px 0 0;
+	font-size:15px;
+}
+#menu span a {
+	display:block;
+	width:100%;
+	margin:0;
+	font-size:14px;
+
+}
+#menu span a:first-of-type {
+	padding: 9px 0px 6px;
+}
+#menu span a:last-of-type {
+	padding: 6px 0px 9px;
+}
+@media (max-width: 800px){
+	h2 {
+	        text-align:center !important;
+	}
+	p {
+	        text-align:center !important;
+	}
+	#content {
+		width: 100%;
+	}
+	#menu-icon {
+		display:block !important;
+	}
+}
+@media (min-width:799px){
+	#content {
+		left:310px;
+	}
+	h2 {
+	        padding: 10px 2% 20px 0;
+	}
+}
+
+@media (min-width:1281px){
+	#menu {
+		left:50% !important;
+		margin-left: -640px !important;
+	}
+	#content {
+		left:50% !important;
+		margin-left: -330px !important;
+	}
+	body {
+		margin:auto;
+	}
+	#opaque-div {
+		left:50%;
+		margin-left:-640px;
+	}
+}
